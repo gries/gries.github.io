@@ -20,7 +20,7 @@ author        = "Christoph Rosse" # Full name shows on blog post pages
 firstname     = "Gries" # First name shows in introduction on main page
 tagline       = "This is an inspirational quote!" # Appears after the introduction
 introheight   = "medium" # Input either 'medium' or 'large' or 'fullheight'
-theme         = "dark" # Choose 'light' or 'dark'
+theme         = "light" # Choose 'light' or 'dark'
 avatar        = "images/profile.jpg" # Path to image in static folder eg. img/avatar.png
 email         = "christoph@rosse.at" # Shows in contact section, or leave blank to omit
 localtime     = true # Show your current local time in contact section
@@ -44,10 +44,13 @@ sharebuttons    = false # On post pages, show share this social buttons
 showprojects    = true # Show Projects section on home page
 
 # This is your projects section. Three images of the same dimensions will look the nicest. If images are omitted, text links will be shown.
-project1link    = "#"
-project1img     = "img/project1.jpg"
-project1title   = "Project 1"
+project1link    = "https://github.com/gries/rcon"
+project1img     = "images/project-rcon.PNG"
+project1title   = "PHP-RCON library"
 
+project2link    = "https://github.com/gries/pokemath"
+project2img     = "images/project-pokemath.png"
+project2title   = "Pokemath"
 
 
 # Social icons appear in introduction and contact section. Add as many more as you like.
