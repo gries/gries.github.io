@@ -1,0 +1,66 @@
+baseurl             = "/"
+languageCode        = "en-us"
+title               = "gries.tv"
+theme               = "introduction"
+enforce_ssl         = "gries.tv"
+builddrafts         = false
+canonifyurls        = true
+contentdir          = "content"
+layoutdir           = "layouts"
+publishdir          = "docs"
+# disqusshortname   = "xxx" # Enable Disqus for comments
+# googleAnalytics   = "xxx"
+
+[permalinks]
+fixed = ":title/"
+blog  = "blog/:slug/"
+
+[params]
+author        = "Christoph Rosse" # Full name shows on blog post pages
+firstname     = "Gries" # First name shows in introduction on main page
+tagline       = "This is an inspirational quote!" # Appears after the introduction
+introheight   = "medium" # Input either 'medium' or 'large' or 'fullheight'
+theme         = "dark" # Choose 'light' or 'dark'
+avatar        = "images/profile.jpg" # Path to image in static folder eg. img/avatar.png
+email         = "christoph@rosse.at" # Shows in contact section, or leave blank to omit
+localtime     = true # Show your current local time in contact section
+timezone      = "Europe/Vienna" # Your timezone as in the TZ* column of this list: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+dateform      = "2 Jan 2006"
+dateformfull  = "Mon 2 Jan 2006 15:04:05 EST"
+cachebuster   = true # Add the current unix timestamp in query string for cache busting css assets
+description   = "personal homepage of christoph rosse aka gries"
+faviconfile   = "img/fav.ico"
+highlightjs   = true # Syntax highlighting
+lang          = "en"
+footertext    = "You can stop scrolling now" # Text to show in footer (overrides default text)
+
+fadein          = true # Turn on/off the fade-in effect
+
+showblog        = false # Show Blog section on home page
+showallposts    = false # Set 'true' to list all posts on home page, or set 'false' to link to separate blog list page
+showlatest      = false # Show latest blog post summary
+sharebuttons    = false # On post pages, show share this social buttons
+
+showprojects    = true # Show Projects section on home page
+
+# This is your projects section. Three images of the same dimensions will look the nicest. If images are omitted, text links will be shown.
+project1link    = "#"
+project1img     = "img/project1.jpg"
+project1title   = "Project 1"
+
+
+
+# Social icons appear in introduction and contact section. Add as many more as you like.
+# Find icon names here: http://fontawesome.io/cheatsheet/
+
+#[[params.social]]
+#url = "https://twitter.com/"
+#icon = "twitter"
+
+#[[params.social]]
+#url = "https://facebook.com/"
+#icon = "facebook"
+
+#[[params.social]]
+#url = "https://linkedin.com/"
+#icon = "linkedin"
