@@ -1,3 +1,7 @@
 h1.bold-title {
   font-family: 'Megrim', cursive;
 }
+
+body {
+  font-family: 'Inconsolata', monospace;
+}
