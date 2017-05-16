@@ -6,25 +6,20 @@ body, h2, h3, h4, h5, h6 {
   font-family: 'Inconsolata', monospace;
 }
 
-@keyframes cf3FadeInOut {
-   0% {
-   opacity:1;
-  }
-  45% {
-  opacity:1;
-  }
-  55% {
-  opacity:0;
-  }
-  100% {
-  opacity:0;
-  }
+#cf {
+  position:relative;
+  margin:0 auto;
 }
 
-#cf img.top {
-  animation-name: cf3FadeInOut;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-duration: 10s;
-  animation-direction: alternate;
+#cf img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+#cf img.top:hover {
+  opacity:0;
 }
