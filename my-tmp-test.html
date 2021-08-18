@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        
+        <link rel="stylesheet" href="http://static.ixopay.devl.mobi.ixo-devl-taas08.in.ixolit.com/r0/root/DXzUaKWBoqcCt4gFDpe1MG/vhost/ixopay.devl.mobi.ixo-devl-taas08.in.ixolit.com/seq/3071/css/bootstrap.min.css" type="text/css" />
+
+        
+    </head>
+    <body>
+        <script src="http://ixopay.x/js/jquery-2.1.4.js"></script>
+        <script src="http://static.ixopay.devl.mobi.ixo-devl-taas08.in.ixolit.com/r0/root/DXzUaKWBoqcCt4gFDpe1MG/vhost/ixopay.devl.mobi.ixo-devl-taas08.in.ixolit.com/rev/K2BHxs1mmQ7FckD3QiF5fC/js/bootstrap.min.js" type="text/javascript"></script>
+
+        <form id="payment-form" action="http://ixopay.x/payment/aa49f1eaa02012c75672" method="POST">
+
+        </form>
+    <div id="sepa-express-container"></div>
+
+    <!-- Content loading -->
+    <script src="https://sepaexpress-sand-fx.azurewebsites.net/sepaExpress.js"></script>
+
+
+    <!-- Init and callback handling -->
+    <script>
+        /* Insert HostedPageId here: */
+        sepaExpress.init('79cf8d0c1f19d85b3319f4c6413f76c2');
+
+        sepaExpress.finish(function (mandateId) {
+
+    console.log('mandate is successfully apprroved with id:'+ mandateId );
+        });
+
+        sepaExpress.error(function (message) {
+            console.log('error', message)
+        });
+    </script>
+
+
+
+        </form>
+
+        
+    </body>
+</html>
