@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Guido Burgstaller</title>
+  <style>
+    body {
+      margin: 0;
+      background: white;
+      height: 100vh;
+      overflow: hidden;
+      position: relative;
+      font-family: sans-serif;
+    }
+    .word {
+      position: absolute;
+      font-size: 20px;
+      color: black;
+      user-select: none;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    let toggle = true; // true for "guido", false for "burgstaller"
+
+    function getRandomPosition() {
+      const x = Math.random() * window.innerWidth;
+      const y = Math.random() * window.innerHeight;
+      return { x, y };
+    }
+
+    function createWord() {
+      const word = toggle ? "guido" : "burgstaller";
+      toggle = !toggle;
+
+      const { x, y } = getRandomPosition();
+
+      const span = document.createElement("span");
+      span.className = "word";
+      span.textContent = word;
+      span.style.left = `${x}px`;
+      span.style.top = `${y}px`;
+
+      document.body.appendChild(span);
+    }
+
+    document.addEventListener("click", createWord);
+    document.addEventListener("keydown", createWord);
+  </script>
+</body>
+</html>
